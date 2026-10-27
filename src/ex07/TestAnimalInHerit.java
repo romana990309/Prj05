@@ -32,8 +32,6 @@ public class TestAnimalInHerit {
 		Dog  bori = new Dog();
 		work(bori,"보리");
 		
-		
-		
 		Cat som = new Cat();
 		work(som, "솜");
 
@@ -46,7 +44,7 @@ public class TestAnimalInHerit {
 
 	// 2. 동일한 부모글래스를 상속한 클래스일 경우 하나의 함수로 구현가능
 	private static void work(Animal animal, String name) {
-		animal.name = "보리";
+		animal.name = name;
 		animal.eat();
 		
 		//class 강제 형변환
@@ -57,6 +55,8 @@ public class TestAnimalInHerit {
 		if(animal instanceof Cat)
 			((Cat)animal).meow();
 		
+		if(animal instanceof Tiger)
+			((Tiger)animal).cry();
 		
 	}
 	
