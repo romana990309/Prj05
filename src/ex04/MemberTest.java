@@ -15,7 +15,6 @@ class GirlMember {
 	private String role;
 
 	// constructor
-	
 	public GirlMember(String name, int bYear, String role) {
 		this.name = name;
 		this.bYear = bYear;
@@ -54,7 +53,7 @@ public class MemberTest {
 		
 		// 객체배열로 저장해서
 		// 1. 먼저 저장할 배열을 인원수에 맞게 준비
-		GirlMember [] aespaArr = new GirlMember[4];
+		GirlMember [] aespaArr = new GirlMember[4];  //배열 생성
 		
 			aespaArr[0] = new GirlMember("윈터", 2000, "리더");
 			aespaArr[1] = new GirlMember("카리나", 2000, "메인래퍼");
